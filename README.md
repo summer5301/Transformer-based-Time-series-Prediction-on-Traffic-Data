@@ -1,16 +1,8 @@
----
-output:
-  md_document:
-    variant: markdown_github
-bibliography: Bibs.bib
----
-[@Taylor02012018]
-
 # Transformer-based-Time-series-Prediction-on-Traffic-Data
 This project explores whether the advantages of the ``self-attention mechanism" translate effectively to time series forecasting based on two transformer-based models, TimeSeriesTransformer and Autoformer, on a timer-series transportation dataset. 
 
 # Data Source
-We fine-tune and validate two target models with a time-series traffic dataset. Our dataset is sourced from police-reported motor vehicle collisions in NYC since 1998 to 2025: https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data
+We fine-tune and validate two target models with a time-series traffic dataset. Our dataset is sourced from police-reported motor vehicle collisions in NYC since 1998 to 2025. [Motor-Vehicle-Collisions-Crashes data](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data)
 
 One can download original data using Socrata API:
 
@@ -31,9 +23,9 @@ We intended to focus on the most recent four years' motor vehicle collisions in 
 
 #  Model Selection
 
-This work chose two recent emerged transformer-based models: "TimeSeriesTransformer" and "Autoformer". The former is a vanilla encoder-decoder Transformer for time series forecasting contributed by Kashif (cite), etc. This decoder-only transformer architecture that uses lags as co-variates with is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities. The later, "Autoformer", was introduced by Wu, ect (\cite). 
+This work chose two recent emerged transformer-based models: "TimeSeriesTransformer" and "Autoformer". The former is a vanilla encoder-decoder Transformer for time series forecasting contributed by [Kashif, etc] (https://arxiv.org/abs/2310.08278). 
 
-a novel architecture that integrates a decomposition framework with an Auto-Correlation mechanism.
+This decoder-only transformer architecture that uses lags as co-variates with is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities.  "Autoformer" was introduced by [Wu, ect](https://arxiv.org/abs/2106.13008) as a novel architecture integrates a decomposition framework with an Auto-Correlation mechanism.
 
 Together, TimeSeriesTransformer and Autoformer represent state-of-the-art approaches to our best knowledge that blend traditional forecasting insights with modern deep learning innovations, offering promising new directions for complex, real-world time-series prediction tasks. By comparing these models, we investigate whether their attention-based structures can effectively learn and predict monthly collision trends in NYC over a 12-month horizon, and provide explanations for the results we obtained.
 
@@ -68,4 +60,4 @@ This project demonstrates that transformer-based models—originally designed fo
 
 # References
 
-This work 
+This work referred to Hugging Face official tutorial of "Probabilistic Time Series Forecasting with 🤗 Transformers" by [Kashif, etc](https://huggingface.co/blog/time-series-transformers) to define time feature and data transformer align with GluonTS style. 
