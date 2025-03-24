@@ -1,3 +1,10 @@
+---
+output:
+  md_document:
+    variant: markdown_github
+bibliography: Bibs.bib
+---
+
 # Transformer-based-Time-series-Prediction-on-Traffic-Data
 This project explores whether the advantages of the ``self-attention mechanism" translate effectively to time series forecasting based on two transformer-based models, TimeSeriesTransformer and Autoformer, on a timer-series transportation dataset. 
 
@@ -21,6 +28,13 @@ We intended to focus on the most recent four years' motor vehicle collisions in 
 
 ![download (5)](https://github.com/user-attachments/assets/91063f9f-3940-4d93-a03d-f1b2b95ece67)
 
+#  Model Selection
+
+This work chose two recent emerged transformer-based models: "TimeSeriesTransformer" and "Autoformer". The former is a vanilla encoder-decoder Transformer for time series forecasting contributed by Kashif (cite), etc. This decoder-only transformer architecture that uses lags as co-variates with is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities. The later, "Autoformer", was introduced by Wu, ect (\cite). 
+
+a novel architecture that integrates a decomposition framework with an Auto-Correlation mechanism.
+
+Together, TimeSeriesTransformer and Autoformer represent state-of-the-art approaches to our best knowledge that blend traditional forecasting insights with modern deep learning innovations, offering promising new directions for complex, real-world time-series prediction tasks. By comparing these models, we investigate whether their attention-based structures can effectively learn and predict monthly collision trends in NYC over a 12-month horizon, and provide explanations for the results we obtained.
 
 # Packages Required
 
@@ -31,9 +45,9 @@ We intended to focus on the most recent four years' motor vehicle collisions in 
 ```
 
 # Results
-![download (2) (1)](https://github.com/user-attachments/assets/787d404c-3829-4ea7-9c1c-84bb5a70cb64)
-![download](https://github.com/user-attachments/assets/e99bdb13-eca6-448d-9425-975e27a43134)
 
+![download](https://github.com/user-attachments/assets/e99bdb13-eca6-448d-9425-975e27a43134)
+![download (2) (1)](https://github.com/user-attachments/assets/787d404c-3829-4ea7-9c1c-84bb5a70cb64)
 
 Our result in loss curve shows that both models exhibit a general downward trend in the training loss as the number of epochs increases, indicating successful learning; nevertheless, some distinct trait are observed.
 
@@ -50,3 +64,7 @@ In borough-by-borough comparison, Manhattan and Brooklyn tend to show higher col
 # Conclusion
 
 This project demonstrates that transformer-based models—originally designed for NLP—can be successfully adapted for long-term time-series forecasting of monthly motor vehicle collisions in NYC. Both the TimeSeriesTransformer and Autoformer successfully captured the temporal dependencies, seasonal patterns, and underlying trends in the monthly collision data, providing reliable forecasts over a 12-month horizon. The study also underscores the broader implications of applying transformer-based architectures to time-series analysis. The ability to capture intricate temporal dynamics not only improves forecasting accuracy but also provides a deeper understanding of the underlying processes driving motor vehicle collisions. This insight is crucial for developing proactive traffic safety strategies and informing policy decisions in dynamic urban environments.
+
+# References
+
+This work 
