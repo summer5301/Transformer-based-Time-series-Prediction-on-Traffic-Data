@@ -17,7 +17,7 @@ results = Socrata("data.cityofnewyork.us", None).get("h9gi-nx95",
                                                      limit=500000)
 ```
 
-We intended to focus on the most recent four years' motor vehicle collisions in NYC. The data was cleaned and filtered from January 1, 2021, to December 31, 2024, encompassing 48 months of crash records. These records were aggregated by borough and by month, resulting in monthly collision counts for each borough. A 12-month prediction window (one year) was defined for long-horizon forecasting. The training set spans the first 36 months (January 2021 – December 2023) while the test set covers the full 48-month period, enabling forecasts for the final 12 months (January 2024 – December 2024). The data transformation code is included in ./src/code.py script.
+We intended to focus on the most recent four years' motor vehicle collisions in NYC. The data was cleaned and filtered from January 1, 2021, to December 31, 2024, encompassing 48 months of crash records. These records were aggregated by borough and by month, resulting in monthly collision counts for each borough. A 12-month prediction window (one year) was defined for long-horizon forecasting. The training set spans the first 36 months (January 2021 – December 2023) while the test set covers the full 48-month period, enabling forecasts for the final 12 months (January 2024 – December 2024). The data transformation code is included in ./src/run.py script.
 
 ![download (5)](https://github.com/user-attachments/assets/91063f9f-3940-4d93-a03d-f1b2b95ece67)
 
