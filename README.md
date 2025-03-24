@@ -1,5 +1,5 @@
 # Transformer-based-Time-series-Prediction-on-Traffic-Data
-This project explores whether the advantages of the ``self-attention mechanism" translate effectively to time series forecasting based on two transformer-based models, TimeSeriesTransformer and Autoformer, on a timer-series transportation dataset. 
+This project explores whether the advantages of the "self-attention mechanism" translate effectively to time series forecasting based on two transformer-based models, TimeSeriesTransformer and Autoformer, on a timer-series transportation dataset. 
 
 # Data Source
 We fine-tune and validate two target models with a time-series traffic dataset. Our dataset is sourced from police-reported motor vehicle collisions in NYC since 1998 to 2025. [Motor-Vehicle-Collisions-Crashes data](https://data.cityofnewyork.us/Public-Safety/Motor-Vehicle-Collisions-Crashes/h9gi-nx95/about_data)
