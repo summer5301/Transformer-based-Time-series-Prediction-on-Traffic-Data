@@ -46,7 +46,7 @@ Our result in loss curve shows that both models exhibit a general downward trend
 
 TimeSeriesTransformer shows a steady decrease in loss through the initial epochs, occasionally experiencing spikes in training loss but generally trending downward. Near the later epochs (beyond approximately 150), the model experiences a few larger fluctuations, suggesting sensitivity to learning rate or hyperparameter settings. On the contrary, Autoformer also displays a gradual reduction in loss, with some oscillations but fewer large spikes compared to TimeSeriesTransformer. Ends training at a loss value comparable to or slightly higher than the lowest points of the TimeSeriesTransformer, though overall differences are modest.
 
-![download (1)](https://github.com/user-attachments/assets/baf2fb93-2af6-4eac-a9ee-149855dcfde4){:height="36px" width="36px"}
+![download (1)](https://github.com/user-attachments/assets/baf2fb93-2af6-4eac-a9ee-149855dcfde4){:height="15px" width="15px"}
 ![download (3)](https://github.com/user-attachments/assets/6f8e86c5-fe3a-4ef2-88df-143b63138890)
 
 
