@@ -1,4 +1,4 @@
-# Transformer-based-Time-series-Prediction-on-Traffic-Data
+# Transformer-Based Time Series Prediction on Traffic Data
 This project explores whether the advantages of the "self-attention mechanism" translate effectively to time series forecasting based on two transformer-based models, TimeSeriesTransformer and Autoformer, on a timer-series transportation dataset. 
 
 # Data Source
@@ -23,7 +23,7 @@ We intended to focus on the most recent four years' motor vehicle collisions in 
 
 #  Model Selection
 
-This work chose two recent emerged transformer-based models: "TimeSeriesTransformer" and "Autoformer". The former is a vanilla encoder-decoder Transformer for time series forecasting contributed by [Kashif, etc] (https://arxiv.org/abs/2310.08278). 
+This work chose two recent emerged transformer-based models: "TimeSeriesTransformer" and "Autoformer". The former is a vanilla encoder-decoder Transformer for time series forecasting contributed by [Kashif, etc](https://arxiv.org/abs/2310.08278). 
 
 This decoder-only transformer architecture that uses lags as co-variates with is pretrained on a large corpus of diverse time series data from several domains, and demonstrates strong zero-shot generalization capabilities.  "Autoformer" was introduced by [Wu, ect](https://arxiv.org/abs/2106.13008) as a novel architecture integrates a decomposition framework with an Auto-Correlation mechanism.
 
@@ -46,7 +46,7 @@ Our result in loss curve shows that both models exhibit a general downward trend
 
 TimeSeriesTransformer shows a steady decrease in loss through the initial epochs, occasionally experiencing spikes in training loss but generally trending downward. Near the later epochs (beyond approximately 150), the model experiences a few larger fluctuations, suggesting sensitivity to learning rate or hyperparameter settings. On the contrary, Autoformer also displays a gradual reduction in loss, with some oscillations but fewer large spikes compared to TimeSeriesTransformer. Ends training at a loss value comparable to or slightly higher than the lowest points of the TimeSeriesTransformer, though overall differences are modest.
 
-![download (1)](https://github.com/user-attachments/assets/baf2fb93-2af6-4eac-a9ee-149855dcfde4)
+![download (1)](https://github.com/user-attachments/assets/baf2fb93-2af6-4eac-a9ee-149855dcfde4){:height="36px" width="36px"}
 ![download (3)](https://github.com/user-attachments/assets/6f8e86c5-fe3a-4ef2-88df-143b63138890)
 
 
